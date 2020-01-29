@@ -13,7 +13,7 @@ We can use the `v-for` directive to render a list of items based on an array. Th
 
 ``` html
 <ul id="example-1">
-  <li v-for="item in items">
+  <li v-for="item in items" :key="item.message">
     {{ item.message }}
   </li>
 </ul>
